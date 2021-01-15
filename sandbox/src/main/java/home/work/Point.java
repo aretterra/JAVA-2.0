@@ -1,4 +1,4 @@
-package Home.work;
+package home.work;
 
 public class Point {
    public double x;
