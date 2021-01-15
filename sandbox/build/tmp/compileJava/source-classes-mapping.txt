@@ -4,7 +4,7 @@ ru/stqa/sandbox/Rectangle.java
  ru.stqa.sandbox.Rectangle
 ru/stqa/sandbox/MyFirstProgram.java
  ru.stqa.sandbox.MyFirstProgram
-Home/work/Point.java
- Home.work.Point
-Home/work/Main.java
- Home.work.Main
+home/work/Point.java
+ home.work.Point
+home/work/Main.java
+ home.work.Main
