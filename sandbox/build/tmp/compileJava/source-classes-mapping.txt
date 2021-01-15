@@ -1,6 +1,6 @@
-ru/stqa/sandbox/MyFirstProgram.java
- ru.stqa.sandbox.MyFirstProgram
-ru/stqa/sandbox/Rectangle.java
- ru.stqa.sandbox.Rectangle
 ru/stqa/sandbox/Square.java
  ru.stqa.sandbox.Square
+ru/stqa/sandbox/Rectangle.java
+ ru.stqa.sandbox.Rectangle
+ru/stqa/sandbox/MyFirstProgram.java
+ ru.stqa.sandbox.MyFirstProgram
