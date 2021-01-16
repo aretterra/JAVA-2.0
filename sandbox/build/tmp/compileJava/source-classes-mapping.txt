@@ -1,10 +1,6 @@
-ru/stqa/sandbox/Square.java
- ru.stqa.sandbox.Square
 ru/stqa/sandbox/Rectangle.java
  ru.stqa.sandbox.Rectangle
 ru/stqa/sandbox/MyFirstProgram.java
  ru.stqa.sandbox.MyFirstProgram
-home/work/Point.java
- home.work.Point
-home/work/Main.java
- home.work.Main
+ru/stqa/sandbox/Square.java
+ ru.stqa.sandbox.Square
