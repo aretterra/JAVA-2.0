@@ -25,29 +25,45 @@ public class GroupCreate {
     driver = getFirefoxDriver();
     baseUrl = "https://www.google.com/";
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+    login("admin", "secret");
+  }
+
+  private void login(String login, String password) {
     driver.get("http://localhost/addressbook/");
     driver.findElement(By.name("user")).click();
-    driver.findElement(By.name("user")).sendKeys("admin");
+    driver.findElement(By.name("user")).sendKeys(login);
     driver.findElement(By.name("pass")).click();
-    driver.findElement(By.name("pass")).sendKeys("secret");
+    driver.findElement(By.name("pass")).sendKeys(password);
     driver.findElement(By.xpath("//input[@value='Login']")).click();
   }
 
   @Test
   public void testUntitledTestCase() throws Exception {
-    driver.findElement(By.linkText("groups")).click();
-    driver.findElement(By.name("new")).click();
+    goToGroupCreation("groups");
+    createNewGroupButton("new");
+    fiilGroupForm(new GroupDate("test1", "test2", "test3"));
+    goToGroupCreation("group page");
+  }
+
+  private void fiilGroupForm(GroupDate groupDate) {
     driver.findElement(By.name("group_name")).click();
     driver.findElement(By.name("group_name")).clear();
-    driver.findElement(By.name("group_name")).sendKeys("test1");
+    driver.findElement(By.name("group_name")).sendKeys(groupDate.getName());
     driver.findElement(By.name("group_header")).click();
     driver.findElement(By.name("group_header")).clear();
-    driver.findElement(By.name("group_header")).sendKeys("test2");
+    driver.findElement(By.name("group_header")).sendKeys(groupDate.getHeader());
     driver.findElement(By.name("group_footer")).click();
     driver.findElement(By.name("group_footer")).clear();
-    driver.findElement(By.name("group_footer")).sendKeys("test3");
+    driver.findElement(By.name("group_footer")).sendKeys(groupDate.getFooter());
     driver.findElement(By.name("submit")).click();
-    driver.findElement(By.linkText("group page")).click();
+  }
+
+  private void createNewGroupButton(String s) {
+    driver.findElement(By.name(s)).click();
+  }
+
+  private void goToGroupCreation(String groups) {
+    driver.findElement(By.linkText(groups)).click();
   }
 
   @AfterClass(alwaysRun = true)

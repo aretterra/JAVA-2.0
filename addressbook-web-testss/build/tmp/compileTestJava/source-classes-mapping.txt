@@ -1,6 +1,8 @@
-ru/stqa/addressbook/GroupData.java
- ru.stqa.addressbook.GroupData
-ru/stqa/addressbook/GroupCreate.java
- ru.stqa.addressbook.GroupCreate
+ru/stqa/addressbook/NumberDate.java
+ ru.stqa.addressbook.NumberDate
 ru/stqa/addressbook/CreateNumber.java
  ru.stqa.addressbook.CreateNumber
+ru/stqa/addressbook/GroupCreate.java
+ ru.stqa.addressbook.GroupCreate
+ru/stqa/addressbook/GroupDate.java
+ ru.stqa.addressbook.GroupDate
