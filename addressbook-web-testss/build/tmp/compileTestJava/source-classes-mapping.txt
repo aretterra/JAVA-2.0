@@ -1,8 +1,14 @@
-ru/stqa/addressbook/NumberDate.java
- ru.stqa.addressbook.NumberDate
-ru/stqa/addressbook/CreateNumber.java
- ru.stqa.addressbook.CreateNumber
-ru/stqa/addressbook/GroupCreate.java
- ru.stqa.addressbook.GroupCreate
 ru/stqa/addressbook/GroupDate.java
  ru.stqa.addressbook.GroupDate
+ru/stqa/addressbook/NumberDate.java
+ ru.stqa.addressbook.NumberDate
+ru/stqa/addressbook/TestBase.java
+ ru.stqa.addressbook.TestBase
+ru/stqa/addressbook/CreateNumber.java
+ ru.stqa.addressbook.CreateNumber
+ru/stqa/addressbook/GroupDeletion.java
+ ru.stqa.addressbook.GroupDeletion
+ru/stqa/addressbook/GroupCreate.java
+ ru.stqa.addressbook.GroupCreate
+ru/stqa/addressbook/DeleteNumber.java
+ ru.stqa.addressbook.DeleteNumber
