@@ -158,8 +158,8 @@ public class TestBase {
         acceptNextAlert = true;
     }
 
-    protected void clickHomePage(By home) {
-        driver.findElement(home).click();
+    protected void clickHomePage(By linkText) {
+        driver.findElement(By.linkText("home")).click();
     }
 
     protected void submitDelete() {

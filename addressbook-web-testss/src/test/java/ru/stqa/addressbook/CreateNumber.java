@@ -10,6 +10,7 @@ public class CreateNumber extends TestBase {
         newNemberCreateButton(By.linkText("add new"));
         fiilNumberForm(new NumberDate("test1", "test2", "test3", "test4", "test5", "test6", "test7", "+37533333333333"));
         submitNumberCreation("(//input[@name='submit'])[2]");
+        clickHomePage(By.linkText("home"));
     }
 
 

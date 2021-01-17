@@ -6,9 +6,9 @@ ru/stqa/addressbook/TestBase.java
  ru.stqa.addressbook.TestBase
 ru/stqa/addressbook/CreateNumber.java
  ru.stqa.addressbook.CreateNumber
-ru/stqa/addressbook/GroupDeletion.java
- ru.stqa.addressbook.GroupDeletion
-ru/stqa/addressbook/GroupCreate.java
- ru.stqa.addressbook.GroupCreate
 ru/stqa/addressbook/DeleteNumber.java
  ru.stqa.addressbook.DeleteNumber
+ru/stqa/addressbook/GroupCreate.java
+ ru.stqa.addressbook.GroupCreate
+ru/stqa/addressbook/GroupDeletion.java
+ ru.stqa.addressbook.GroupDeletion
