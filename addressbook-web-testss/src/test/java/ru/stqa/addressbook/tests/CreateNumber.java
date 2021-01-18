@@ -8,10 +8,10 @@ public class CreateNumber extends TestBase {
 
     @Test
     public void testNumberCreate() throws Exception {
-        app.newNemberCreateButton(By.linkText("add new"));
-        app.fiilNumberForm(new NumberDate("test1", "test2", "test3", "test4", "test5", "test6", "test7", "+37533333333333"));
-        app.submitNumberCreation("(//input[@name='submit'])[2]");
-        app.clickHomePage(By.linkText("home"));
+        app.getNumberHelper().newNemberCreateButton(By.linkText("add new"));
+        app.getNumberHelper().fiilNumberForm(new NumberDate("test1", "test2", "test3", "test4", "test5", "test6", "test7", "+37533333333333"));
+        app.getNumberHelper().submitNumberCreation("(//input[@name='submit'])[2]");
+        app.getNumberHelper().clickHomePage(By.linkText("home"));
     }
 
 

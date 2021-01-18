@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.stqa.addressbook.tests.GroupDeletion" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-01-18T19:28:04" hostname="DESKTOP-SNNFNLS" time="1.721">
+<testsuite name="ru.stqa.addressbook.tests.GroupDeletion" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-01-18T21:07:46" hostname="DESKTOP-SNNFNLS" time="1.835">
   <properties/>
-  <testcase name="testDeleteGroup" classname="ru.stqa.addressbook.tests.GroupDeletion" time="1.721"/>
+  <testcase name="testDeleteGroup" classname="ru.stqa.addressbook.tests.GroupDeletion" time="1.835"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[1610998075166	geckodriver	INFO	Listening on 127.0.0.1:5321
-1610998075647	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Admin\\AppData\\Local\\Temp\\rust_mozprofilehwa7DF"
+  <system-err><![CDATA[1611004056745	geckodriver	INFO	Listening on 127.0.0.1:30567
+1611004057173	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Admin\\AppData\\Local\\Temp\\rust_mozprofilewHwUR1"
 JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
-1610998081235	Marionette	INFO	Listening on port 63696
-1610998081472	Marionette	WARN	TLS certificate errors will be ignored for this session
-янв. 18, 2021 10:28:01 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+1611004062354	Marionette	INFO	Listening on port 65333
+1611004062522	Marionette	WARN	TLS certificate errors will be ignored for this session
+янв. 19, 2021 12:07:42 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>
