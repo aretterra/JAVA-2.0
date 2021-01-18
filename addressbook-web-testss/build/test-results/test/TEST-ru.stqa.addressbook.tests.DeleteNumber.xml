@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.stqa.addressbook.tests.DeleteNumber" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-01-18T19:27:31" hostname="DESKTOP-SNNFNLS" time="1.352">
+  <properties/>
+  <testcase name="testNumberDelete" classname="ru.stqa.addressbook.tests.DeleteNumber" time="1.352"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[1610998041610	geckodriver	INFO	Listening on 127.0.0.1:44520
+1610998042173	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Admin\\AppData\\Local\\Temp\\rust_mozprofileOqWnUP"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1610998047448	Marionette	INFO	Listening on port 63625
+1610998047490	Marionette	WARN	TLS certificate errors will be ignored for this session
+янв. 18, 2021 10:27:27 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>
