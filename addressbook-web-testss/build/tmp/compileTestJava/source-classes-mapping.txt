@@ -16,6 +16,8 @@ ru/stqa/addressbook/tests/CreateNumber.java
  ru.stqa.addressbook.tests.CreateNumber
 ru/stqa/addressbook/tests/GroupCreate.java
  ru.stqa.addressbook.tests.GroupCreate
+ru/stqa/addressbook/appmanager/HelperBase.java
+ ru.stqa.addressbook.appmanager.HelperBase
 ru/stqa/addressbook/appmanager/NumberHelper.java
  ru.stqa.addressbook.appmanager.NumberHelper
 ru/stqa/addressbook/appmanager/SessionHelper.java

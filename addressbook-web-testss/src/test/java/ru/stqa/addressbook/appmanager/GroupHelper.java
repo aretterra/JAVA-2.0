@@ -4,40 +4,33 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import ru.stqa.addressbook.model.GroupDate;
 
-public class GroupHelper {
-    private WebDriver driver;
+public class GroupHelper extends HelperBase{
 
     public GroupHelper(WebDriver driver) {
-        this.driver = driver;
+        super(driver);
 
     }
 
     public void fiilGroupForm(GroupDate groupDate) {
-      driver.findElement(By.name("group_name")).click();
-      driver.findElement(By.name("group_name")).clear();
-      driver.findElement(By.name("group_name")).sendKeys(groupDate.getName());
-      driver.findElement(By.name("group_header")).click();
-      driver.findElement(By.name("group_header")).clear();
-      driver.findElement(By.name("group_header")).sendKeys(groupDate.getHeader());
-      driver.findElement(By.name("group_footer")).click();
-      driver.findElement(By.name("group_footer")).clear();
-      driver.findElement(By.name("group_footer")).sendKeys(groupDate.getFooter());
-      driver.findElement(By.name("submit")).click();
+        type("group_name", groupDate.getName());
+        type("group_header", groupDate.getHeader());
+        type("group_footer", groupDate.getFooter());
+        click(By.name("submit"));
     }
 
     public void createNewGroupButton(String s) {
-      driver.findElement(By.name(s)).click();
+        click(By.name(s));
     }
 
     public void goToGroupCreation(String groups) {
-      driver.findElement(By.linkText(groups)).click();
+        click(By.linkText(groups));
     }
 
     public void deleteGroupButonClick() {
-      driver.findElement(By.xpath("(//input[@name='delete'])[2]")).click();
+        click(By.xpath("(//input[@name='delete'])[2]"));
     }
 
     public void deleteGroup() {
-      driver.findElement(By.name("selected[]")).click();
+        click(By.name("selected[]"));
     }
 }

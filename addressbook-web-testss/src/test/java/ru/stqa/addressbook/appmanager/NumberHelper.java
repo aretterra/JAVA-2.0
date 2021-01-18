@@ -7,12 +7,11 @@ import ru.stqa.addressbook.model.NumberDate;
 
 import static org.testng.Assert.assertTrue;
 
-public class NumberHelper {
-    private WebDriver driver;
+public class NumberHelper extends HelperBase{
     private boolean acceptNextAlert = true;
 
     public NumberHelper(WebDriver driver) {
-        this.driver = driver;
+        super(driver);
     }
 
     public void submitNumberCreation(String s) {
@@ -20,31 +19,16 @@ public class NumberHelper {
     }
 
     public void fiilNumberForm(NumberDate numberDate) {
-        driver.findElement(By.name("firstname")).click();
-        driver.findElement(By.name("firstname")).clear();
-        driver.findElement(By.name("firstname")).sendKeys(numberDate.getFirstname());
-        driver.findElement(By.name("middlename")).click();
-        driver.findElement(By.name("middlename")).clear();
-        driver.findElement(By.name("middlename")).sendKeys(numberDate.getMiddlename());
-        driver.findElement(By.name("lastname")).click();
-        driver.findElement(By.name("lastname")).clear();
-        driver.findElement(By.name("lastname")).sendKeys(numberDate.getLastname());
-        driver.findElement(By.name("nickname")).click();
-        driver.findElement(By.name("nickname")).clear();
-        driver.findElement(By.name("nickname")).sendKeys(numberDate.getNickname());
-        driver.findElement(By.name("title")).click();
-        driver.findElement(By.name("title")).clear();
-        driver.findElement(By.name("title")).sendKeys(numberDate.getTitle());
-        driver.findElement(By.name("company")).click();
-        driver.findElement(By.name("company")).clear();
-        driver.findElement(By.name("company")).sendKeys(numberDate.getCompany());
-        driver.findElement(By.name("address")).click();
-        driver.findElement(By.name("address")).clear();
-        driver.findElement(By.name("address")).sendKeys(numberDate.getAddress());
+        type("firstname", numberDate.getFirstname());
+        type("middlename", numberDate.getMiddlename());
+        type("lastname", numberDate.getLastname());
+        type("nickname", numberDate.getNickname());
+        type("title", numberDate.getTitle());
+        type("company", numberDate.getCompany());
+        type("address", numberDate.getAddress());
         driver.findElement(By.name("theform")).click();
-        driver.findElement(By.name("home")).click();
-        driver.findElement(By.name("home")).clear();
-        driver.findElement(By.name("home")).sendKeys(numberDate.getNumber());
+        type("home", numberDate.getNumber());
+
     }
 
     public void newNemberCreateButton(By add_new) {
@@ -52,18 +36,18 @@ public class NumberHelper {
     }
 
     private String closeAlertAndGetItsText() {
-      try {
-        Alert alert = driver.switchTo().alert();
-        String alertText = alert.getText();
-        if (acceptNextAlert) {
-          alert.accept();
-        } else {
-          alert.dismiss();
+        try {
+            Alert alert = driver.switchTo().alert();
+            String alertText = alert.getText();
+            if (acceptNextAlert) {
+                alert.accept();
+            } else {
+                alert.dismiss();
+            }
+            return alertText;
+        } finally {
+            acceptNextAlert = true;
         }
-        return alertText;
-      } finally {
-        acceptNextAlert = true;
-      }
     }
 
     public void clickDeleteNumberButton(By xpath) {
