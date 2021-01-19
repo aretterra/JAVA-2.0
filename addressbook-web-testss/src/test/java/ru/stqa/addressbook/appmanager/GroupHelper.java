@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import ru.stqa.addressbook.model.GroupDate;
 
-public class GroupHelper extends HelperBase{
+public class GroupHelper extends HelperBase {
 
     public GroupHelper(WebDriver driver) {
         super(driver);
@@ -15,14 +15,17 @@ public class GroupHelper extends HelperBase{
         type("group_name", groupDate.getName());
         type("group_header", groupDate.getHeader());
         type("group_footer", groupDate.getFooter());
-        click(By.name("submit"));
+    }
+
+    public void submitGroupFormButton(String submit) {
+        click(By.name(submit));
     }
 
     public void createNewGroupButton(String s) {
         click(By.name(s));
     }
 
-    public void goToGroupCreation(String groups) {
+    public void goToGroup(String groups) {
         click(By.linkText(groups));
     }
 
@@ -30,7 +33,17 @@ public class GroupHelper extends HelperBase{
         click(By.xpath("(//input[@name='delete'])[2]"));
     }
 
-    public void deleteGroup() {
+    public void selectGroup() {
         click(By.name("selected[]"));
     }
+
+    public void editGroupButton() {
+        click(By.xpath("(//input[@name='edit'])[2]"));
+    }
+
+    public void submitGroupUpdate() {
+        click(By.name("update"));
+    }
+
+
 }
