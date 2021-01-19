@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.stqa.addressbook.tests.NumberModification" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-01-19T21:04:53" hostname="DESKTOP-SNNFNLS" time="3.952">
+  <properties/>
+  <testcase name="testNumberModification" classname="ru.stqa.addressbook.tests.NumberModification" time="3.952"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+1611090283941	geckodriver	INFO	Listening on 127.0.0.1:30887
+1611090285118	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Admin\\AppData\\Local\\Temp\\rust_mozprofiletKieCM"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1611090290158	Marionette	INFO	Listening on port 57294
+1611090290434	Marionette	WARN	TLS certificate errors will be ignored for this session
+янв. 20, 2021 12:04:50 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>

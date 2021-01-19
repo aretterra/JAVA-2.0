@@ -26,7 +26,7 @@ public class NumberHelper extends HelperBase{
         type("title", numberDate.getTitle());
         type("company", numberDate.getCompany());
         type("address", numberDate.getAddress());
-        driver.findElement(By.name("theform")).click();
+       // driver.findElement(By.name("theform")).click();
         type("home", numberDate.getNumber());
 
     }
@@ -65,5 +65,13 @@ public class NumberHelper extends HelperBase{
 
     public void submitDeleteNumber() {
         assertTrue(closeAlertAndGetItsText().matches("^Delete 1 addresses[\\s\\S]$"));
+    }
+
+    public void clickEditButton() {
+        click(By.xpath("//img[@alt='Edit']"));
+    }
+
+    public void submitUpdateNumber() {
+        click(By.xpath("(//input[@name='update'])[2]"));
     }
 }

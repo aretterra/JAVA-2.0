@@ -6,8 +6,8 @@ ru/stqa/addressbook/model/GroupDate.java
  ru.stqa.addressbook.model.GroupDate
 ru/stqa/addressbook/model/NumberDate.java
  ru.stqa.addressbook.model.NumberDate
-ru/stqa/addressbook/appmanager/NumberHelper.java
- ru.stqa.addressbook.appmanager.NumberHelper
+ru/stqa/addressbook/appmanager/GroupHelper.java
+ ru.stqa.addressbook.appmanager.GroupHelper
 ru/stqa/addressbook/tests/TestBase.java
  ru.stqa.addressbook.tests.TestBase
 ru/stqa/addressbook/tests/DeleteNumber.java
@@ -18,9 +18,11 @@ ru/stqa/addressbook/tests/GroupDeletion.java
  ru.stqa.addressbook.tests.GroupDeletion
 ru/stqa/addressbook/appmanager/ApplicationManager.java
  ru.stqa.addressbook.appmanager.ApplicationManager
-ru/stqa/addressbook/appmanager/GroupHelper.java
- ru.stqa.addressbook.appmanager.GroupHelper
+ru/stqa/addressbook/appmanager/NumberHelper.java
+ ru.stqa.addressbook.appmanager.NumberHelper
 ru/stqa/addressbook/tests/CreateNumber.java
  ru.stqa.addressbook.tests.CreateNumber
 ru/stqa/addressbook/tests/GroupCreate.java
  ru.stqa.addressbook.tests.GroupCreate
+ru/stqa/addressbook/tests/NumberModification.java
+ ru.stqa.addressbook.tests.NumberModification
