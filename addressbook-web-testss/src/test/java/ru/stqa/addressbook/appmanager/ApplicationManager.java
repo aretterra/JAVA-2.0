@@ -14,7 +14,6 @@ public class ApplicationManager {
     private NumberHelper numberHelper;
     private GroupHelper groupHelper;
     public StringBuffer verificationErrors = new StringBuffer();
-    private String baseUrl;
 
     private static WebDriver getFirefoxDriver(){
       System.setProperty("webdriver.gecko.driver",
@@ -24,7 +23,6 @@ public class ApplicationManager {
 
     public void init() {
         driver = ApplicationManager.getFirefoxDriver();
-        baseUrl = "https://www.google.com/";
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         sessionHelper = new SessionHelper(driver);
         numberHelper = new NumberHelper(driver);
