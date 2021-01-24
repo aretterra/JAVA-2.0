@@ -1,2 +1,4 @@
 ru/stqa/sandbox/SquareTest.java
  ru.stqa.sandbox.SquareTest
+ru/stqa/sandbox/TestEquation.java
+ ru.stqa.sandbox.TestEquation

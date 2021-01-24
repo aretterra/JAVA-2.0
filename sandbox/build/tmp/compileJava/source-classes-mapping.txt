@@ -4,3 +4,5 @@ ru/stqa/sandbox/Rectangle.java
  ru.stqa.sandbox.Rectangle
 ru/stqa/sandbox/Square.java
  ru.stqa.sandbox.Square
+ru/stqa/sandbox/Equation.java
+ ru.stqa.sandbox.Equation
