@@ -16,7 +16,8 @@ public class HelperBase {
 
     protected void type(String group_name, String name) {
         click(By.name(group_name));
+        if (name != null){
         driver.findElement(By.name(group_name)).clear();
         driver.findElement(By.name(group_name)).sendKeys(name);
-    }
+    }}
 }
