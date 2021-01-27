@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.stqa.addressbook.tests.GroupCreate" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-01-27T20:21:50" hostname="DESKTOP-SNNFNLS" time="2.051">
+<testsuite name="ru.stqa.addressbook.tests.GroupCreate" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-01-27T21:28:49" hostname="DESKTOP-SNNFNLS" time="2.661">
   <properties/>
-  <testcase name="testGroupCreate" classname="ru.stqa.addressbook.tests.GroupCreate" time="2.051"/>
+  <testcase name="testGroupCreate" classname="ru.stqa.addressbook.tests.GroupCreate" time="2.661"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-1611778899252	geckodriver	INFO	Listening on 127.0.0.1:49037
-1611778900466	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Admin\\AppData\\Local\\Temp\\rust_mozprofileZGEdPH"
+1611782919027	geckodriver	INFO	Listening on 127.0.0.1:43953
+1611782920111	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Admin\\AppData\\Local\\Temp\\rust_mozprofilegKiSC7"
 JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
-1611778906655	Marionette	INFO	Listening on port 55107
-1611778906795	Marionette	WARN	TLS certificate errors will be ignored for this session
-янв. 27, 2021 11:21:46 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+1611782925154	Marionette	INFO	Listening on port 55751
+1611782925416	Marionette	WARN	TLS certificate errors will be ignored for this session
+янв. 28, 2021 12:28:45 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>

@@ -26,6 +26,7 @@ public class NumberHelper extends HelperBase{
         type("title", numberDate.getTitle());
         type("company", numberDate.getCompany());
         type("address", numberDate.getAddress());
+       // driver.findElement(By.name("theform")).click();
         type("home", numberDate.getNumber());
 
     }
