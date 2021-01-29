@@ -1,8 +1,11 @@
 package ru.stqa.addressbook.appmanager;
 
+import org.junit.Assert;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.Select;
 import ru.stqa.addressbook.model.NumberDate;
 
 import static org.testng.Assert.assertTrue;
@@ -18,7 +21,7 @@ public class NumberHelper extends HelperBase{
         driver.findElement(By.xpath(s)).click();
     }
 
-    public void fiilNumberForm(NumberDate numberDate) {
+    public void fiilNumberForm(NumberDate numberDate, boolean creation) {
         type("firstname", numberDate.getFirstname());
         type("middlename", numberDate.getMiddlename());
         type("lastname", numberDate.getLastname());
@@ -26,8 +29,13 @@ public class NumberHelper extends HelperBase{
         type("title", numberDate.getTitle());
         type("company", numberDate.getCompany());
         type("address", numberDate.getAddress());
-       // driver.findElement(By.name("theform")).click();
         type("home", numberDate.getNumber());
+        if (creation){
+            new Select(driver.findElement(By.name("new_group"))).selectByVisibleText(numberDate.getGroup());
+        } else {
+            Assert.assertFalse(isElementPresent(By.name("new_group")));
+        }
+
 
     }
 

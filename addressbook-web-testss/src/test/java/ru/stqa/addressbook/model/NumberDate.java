@@ -10,7 +10,10 @@ public class NumberDate {
     private final String address;
     private final String number;
 
-    public NumberDate(String firstname, String middlename, String lastname, String nickname, String title, String company, String address, String number) {
+
+    private String group;
+
+    public NumberDate(String firstname, String middlename, String lastname, String nickname, String title, String company, String address, String number, String group) {
         this.firstname = firstname;
         this.middlename = middlename;
         this.lastname = lastname;
@@ -19,6 +22,7 @@ public class NumberDate {
         this.company = company;
         this.address = address;
         this.number = number;
+        this.group = group;
     }
 
     public String getFirstname() {
@@ -51,5 +55,8 @@ public class NumberDate {
 
     public String getNumber() {
         return number;
+    }
+    public String getGroup() {
+        return group;
     }
 }

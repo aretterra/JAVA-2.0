@@ -2,6 +2,7 @@ package ru.stqa.addressbook.appmanager;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.Select;
 import ru.stqa.addressbook.model.GroupDate;
 
 public class GroupHelper extends HelperBase {
@@ -15,6 +16,7 @@ public class GroupHelper extends HelperBase {
         type("group_name", groupDate.getName());
         type("group_header", groupDate.getHeader());
         type("group_footer", groupDate.getFooter());
+        new Select(driver.findElement(By.name("group_parent_id"))).selectByVisibleText(groupDate.getParent());
     }
 
     public void submitGroupFormButton(String submit) {

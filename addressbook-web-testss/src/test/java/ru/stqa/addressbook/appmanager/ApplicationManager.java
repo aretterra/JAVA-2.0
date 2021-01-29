@@ -31,7 +31,7 @@ public class ApplicationManager {
             driver = new ChromeDriver();
         }else driver = new InternetExplorerDriver();
 
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
         sessionHelper = new SessionHelper(driver);
         numberHelper = new NumberHelper(driver);
         groupHelper = new GroupHelper(driver);
