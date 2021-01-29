@@ -10,7 +10,7 @@ import ru.stqa.addressbook.model.NumberDate;
 
 import static org.testng.Assert.assertTrue;
 
-public class NumberHelper extends HelperBase{
+public class NumberHelper extends HelperBase {
     private boolean acceptNextAlert = true;
 
     public NumberHelper(WebDriver driver) {
@@ -30,7 +30,7 @@ public class NumberHelper extends HelperBase{
         type("company", numberDate.getCompany());
         type("address", numberDate.getAddress());
         type("home", numberDate.getNumber());
-        if (creation){
+        if (creation) {
             new Select(driver.findElement(By.name("new_group"))).selectByVisibleText(numberDate.getGroup());
         } else {
             Assert.assertFalse(isElementPresent(By.name("new_group")));
@@ -68,6 +68,9 @@ public class NumberHelper extends HelperBase{
     }
 
     public void clickHomePage(By linkText) {
+        if (isElementPresent(By.id("maintable"))) {
+            return;
+        }
         driver.findElement(By.linkText("home")).click();
     }
 
