@@ -16,7 +16,7 @@ public class GroupHelper extends HelperBase {
         type("group_name", groupDate.getName());
         type("group_header", groupDate.getHeader());
         type("group_footer", groupDate.getFooter());
-        new Select(driver.findElement(By.name("group_parent_id"))).selectByVisibleText(groupDate.getParent());
+        //new Select(driver.findElement(By.name("group_parent_id"))).selectByVisibleText(groupDate.getParent());
     }
 
     public void submitGroupFormButton(String submit) {
@@ -54,4 +54,13 @@ public class GroupHelper extends HelperBase {
     }
 
 
+    public void createGroup(GroupDate group) {
+        createNewGroupButton("new");
+        fiilGroupForm(group);
+        submitGroupFormButton("submit");
+    }
+
+    public boolean isThereGroup() {
+       return isElementPresent(By.name("selected[]"));
+    }
 }
